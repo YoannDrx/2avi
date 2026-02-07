@@ -8,7 +8,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 export default function Landing10() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [scrollY, setScrollY] = useState(0);
-  const magneticButtonRef = useRef(null);
+  const magneticButtonRef = useRef<HTMLButtonElement>(null);
   const [buttonOffset, setButtonOffset] = useState({ x: 0, y: 0 });
 
   // Track scroll for parallax effects
@@ -20,7 +20,7 @@ export default function Landing10() {
 
   // Track mouse for magnetic button
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
 
       if (!magneticButtonRef.current) return;
@@ -30,7 +30,7 @@ export default function Landing10() {
       const centerY = rect.top + rect.height / 2;
 
       const distance = Math.sqrt(
-        Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2)
+        Math.pow(e.clientX - centerX, 2) + Math.pow(e.clientY - centerY, 2),
       );
 
       if (distance < 150) {
@@ -49,7 +49,7 @@ export default function Landing10() {
   // Text animation variants
   const textVariant = {
     hidden: { opacity: 0, y: 20 },
-    visible: (i) => ({
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: { delay: i * 0.05, duration: 0.5 },
@@ -68,8 +68,8 @@ export default function Landing10() {
             key={`circle-${i}`}
             className="absolute rounded-full border-2 border-red-600/30"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * 1920,
+              y: Math.random() * 1080,
               scale: Math.random() * 0.5 + 0.3,
             }}
             animate={{
@@ -96,11 +96,11 @@ export default function Landing10() {
             className="absolute h-0.5 bg-gradient-to-r from-red-600/0 via-red-600/50 to-red-600/0"
             initial={{
               x: -1000,
-              y: Math.random() * window.innerHeight,
+              y: Math.random() * 1080,
               width: "200px",
             }}
             animate={{
-              x: window.innerWidth + 1000,
+              x: 2920,
             }}
             transition={{
               duration: Math.random() * 4 + 4,
@@ -150,10 +150,15 @@ export default function Landing10() {
                       animate="visible"
                       className="inline-block mr-3"
                       style={{
-                        background: i === 0 || i === 3 ? "linear-gradient(to right, #ff3333, #ff6666)" : "none",
+                        background:
+                          i === 0 || i === 3
+                            ? "linear-gradient(to right, #ff3333, #ff6666)"
+                            : "none",
                         backgroundClip: i === 0 || i === 3 ? "text" : "unset",
-                        WebkitBackgroundClip: i === 0 || i === 3 ? "text" : "unset",
-                        WebkitTextFillColor: i === 0 || i === 3 ? "transparent" : "white",
+                        WebkitBackgroundClip:
+                          i === 0 || i === 3 ? "text" : "unset",
+                        WebkitTextFillColor:
+                          i === 0 || i === 3 ? "transparent" : "white",
                       }}
                     >
                       {word}
@@ -169,19 +174,20 @@ export default function Landing10() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-lg text-gray-300 mb-8 max-w-md"
               >
-                30+ ans d'expertise en technologies audiovisuelle. Cinéma, événements, LED displays, projection mapping.
+                30+ ans d'expertise en technologies audiovisuelle. Cinéma,
+                événements, LED displays, projection mapping.
               </motion.p>
 
               {/* Magnetic CTA Button */}
               <motion.button
                 ref={magneticButtonRef}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
                 animate={{
-                  x: buttonOffset.x,
+                  opacity: 1,
                   y: buttonOffset.y,
+                  x: buttonOffset.x,
                 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-10 py-4 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-2xl"
@@ -218,7 +224,9 @@ export default function Landing10() {
             {[...Array(6)].map((_, i) => (
               <div key={i} className="inline-flex items-center gap-8 px-8">
                 <span className="text-3xl font-bold text-red-600">★</span>
-                <span className="text-2xl font-bold text-white">CINÉMA • ÉVÉNEMENTS • LED • PROJECTION MAPPING</span>
+                <span className="text-2xl font-bold text-white">
+                  CINÉMA • ÉVÉNEMENTS • LED • PROJECTION MAPPING
+                </span>
                 <span className="text-3xl font-bold text-red-600">★</span>
               </div>
             ))}
@@ -250,9 +258,14 @@ export default function Landing10() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              <h2 className="text-5xl font-bold mb-6">Événements Inoubliables</h2>
+              <h2 className="text-5xl font-bold mb-6">
+                Événements Inoubliables
+              </h2>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                Des avant-premières de films prestigieux aux festivals internationaux, nous créons des expériences audiovisuelles mémorables. Notre expertise couvre tous les aspects techniques et créatifs.
+                Des avant-premières de films prestigieux aux festivals
+                internationaux, nous créons des expériences audiovisuelles
+                mémorables. Notre expertise couvre tous les aspects techniques
+                et créatifs.
               </p>
               <motion.button
                 whileHover={{ scale: 1.05, x: 10 }}
@@ -278,12 +291,36 @@ export default function Landing10() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective">
               {[
-                { title: "Cinéma", icon: "🎬", color: "from-blue-600 to-blue-800" },
-                { title: "Événements", icon: "🎪", color: "from-purple-600 to-purple-800" },
-                { title: "LED Displays", icon: "💡", color: "from-yellow-600 to-orange-800" },
-                { title: "Projection Mapping", icon: "🎨", color: "from-pink-600 to-red-800" },
-                { title: "Audio", icon: "🔊", color: "from-cyan-600 to-blue-800" },
-                { title: "Expertise", icon: "⚙️", color: "from-gray-600 to-gray-800" },
+                {
+                  title: "Cinéma",
+                  icon: "🎬",
+                  color: "from-blue-600 to-blue-800",
+                },
+                {
+                  title: "Événements",
+                  icon: "🎪",
+                  color: "from-purple-600 to-purple-800",
+                },
+                {
+                  title: "LED Displays",
+                  icon: "💡",
+                  color: "from-yellow-600 to-orange-800",
+                },
+                {
+                  title: "Projection Mapping",
+                  icon: "🎨",
+                  color: "from-pink-600 to-red-800",
+                },
+                {
+                  title: "Audio",
+                  icon: "🔊",
+                  color: "from-cyan-600 to-blue-800",
+                },
+                {
+                  title: "Expertise",
+                  icon: "⚙️",
+                  color: "from-gray-600 to-gray-800",
+                },
               ].map((service, idx) => (
                 <motion.div
                   key={idx}
@@ -293,7 +330,7 @@ export default function Landing10() {
                   whileHover={{ rotateY: 10, rotateX: -10 }}
                   className={cn(
                     "h-80 rounded-xl p-8 flex flex-col items-center justify-center text-center cursor-pointer",
-                    `bg-gradient-to-br ${service.color} shadow-lg hover:shadow-2xl transition-shadow`
+                    `bg-gradient-to-br ${service.color} shadow-lg hover:shadow-2xl transition-shadow`,
                   )}
                   style={{
                     perspective: "1000px",
@@ -302,12 +339,18 @@ export default function Landing10() {
                 >
                   <motion.div
                     animate={{ scale: [1, 1.2, 1], rotate: [0, 5, -5, 0] }}
-                    transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      repeatType: "loop",
+                    }}
                     className="text-6xl mb-4"
                   >
                     {service.icon}
                   </motion.div>
-                  <h3 className="text-2xl font-bold text-white">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title}
+                  </h3>
                 </motion.div>
               ))}
             </div>
@@ -382,9 +425,12 @@ export default function Landing10() {
             transition={{ duration: 0.8 }}
             className="relative z-10 text-center max-w-3xl"
           >
-            <h2 className="text-5xl font-bold mb-6">Transformez Votre Vision</h2>
+            <h2 className="text-5xl font-bold mb-6">
+              Transformez Votre Vision
+            </h2>
             <p className="text-xl text-gray-200 mb-8">
-              Depuis 30 ans, nous transformons les visions les plus ambitieuses en réalités audiovisuelles spectaculaires.
+              Depuis 30 ans, nous transformons les visions les plus ambitieuses
+              en réalités audiovisuelles spectaculaires.
             </p>
             <motion.button
               whileHover={{ scale: 1.1 }}
@@ -414,7 +460,8 @@ export default function Landing10() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-xl text-gray-300 mb-12"
             >
-              Contactez nos experts pour transformer votre prochain projet audiovisuel
+              Contactez nos experts pour transformer votre prochain projet
+              audiovisuel
             </motion.p>
 
             <div className="flex gap-6 justify-center flex-wrap">
@@ -444,7 +491,9 @@ export default function Landing10() {
         {/* Footer */}
         <footer className="bg-black border-t border-red-900/50 py-12 px-6">
           <div className="max-w-7xl mx-auto text-center">
-            <p className="text-gray-400 mb-2">© 2024 2AVI - L'Excellence Audiovisuelle</p>
+            <p className="text-gray-400 mb-2">
+              © 2024 2AVI - L'Excellence Audiovisuelle
+            </p>
             <p className="text-gray-600 text-sm">
               30+ ans de passion pour la projection et l'innovation
             </p>

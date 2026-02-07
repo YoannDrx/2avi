@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
 
 export default function Landing9() {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollPos, setScrollPos] = useState(0);
 
-  const handleScroll = (direction) => {
+  const handleScroll = (direction: "left" | "right") => {
     const element = scrollRef.current;
     if (!element) return;
     const scrollAmount = 400;
@@ -107,8 +107,12 @@ export default function Landing9() {
               <span className="text-5xl font-bold text-red-600">30</span>
               <span className="text-2xl text-gray-500">+</span>
             </div>
-            <p className="text-gray-700 font-medium text-lg">Ans d'Expérience</p>
-            <p className="text-gray-500 text-sm mt-2">Leadership reconnu depuis 1994</p>
+            <p className="text-gray-700 font-medium text-lg">
+              Ans d'Expérience
+            </p>
+            <p className="text-gray-500 text-sm mt-2">
+              Leadership reconnu depuis 1994
+            </p>
           </motion.div>
 
           {/* LED Display Icon Card */}
@@ -191,7 +195,8 @@ export default function Landing9() {
           >
             <div className="text-4xl mb-4">"</div>
             <p className="text-xl font-light italic mb-6 leading-relaxed">
-              La projection n'est pas juste une technologie, c'est un art que nous maîtrisons depuis plus de 30 ans.
+              La projection n'est pas juste une technologie, c'est un art que
+              nous maîtrisons depuis plus de 30 ans.
             </p>
             <p className="text-red-200 font-semibold">— 2AVI Expertise</p>
           </motion.div>
@@ -217,7 +222,9 @@ export default function Landing9() {
             whileHover={{ scale: 1.02 }}
             className="md:col-span-1.5 lg:col-span-2 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 shadow-lg p-8 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition-shadow text-center text-white group"
           >
-            <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">→</div>
+            <div className="text-5xl mb-3 group-hover:scale-110 transition-transform">
+              →
+            </div>
             <h3 className="text-lg font-bold mb-2">Nous Contacter</h3>
             <p className="text-gray-300 text-sm">Démarrez votre projet</p>
           </motion.div>
@@ -232,7 +239,9 @@ export default function Landing9() {
           >
             <div className="text-5xl mb-3">🎨</div>
             <h3 className="text-2xl font-bold mb-2">Projection Mapping 3D</h3>
-            <p className="text-white/80">Installations artistiques immersives</p>
+            <p className="text-white/80">
+              Installations artistiques immersives
+            </p>
           </motion.div>
 
           {/* Events Card */}
@@ -252,7 +261,9 @@ export default function Landing9() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
               <h3 className="text-2xl font-bold mb-1">Événements</h3>
-              <p className="text-gray-200 text-sm">Festivals, avant-premières, spectacles</p>
+              <p className="text-gray-200 text-sm">
+                Festivals, avant-premières, spectacles
+              </p>
             </div>
           </motion.div>
         </div>
@@ -276,7 +287,8 @@ export default function Landing9() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-xl text-gray-600 mb-12"
           >
-            Nos experts vous accompagnent du concept à la réalisation pour créer une expérience inoubliable.
+            Nos experts vous accompagnent du concept à la réalisation pour créer
+            une expérience inoubliable.
           </motion.p>
 
           <motion.button
@@ -303,7 +315,9 @@ export default function Landing9() {
               height={60}
             />
           </div>
-          <p className="text-gray-400 mb-2">© 2024 2AVI - L'excellence audiovisuelle</p>
+          <p className="text-gray-400 mb-2">
+            © 2024 2AVI - L'excellence audiovisuelle
+          </p>
           <p className="text-gray-500 text-sm">
             30+ ans d'expertise en cinéma, événements et technologies LED
           </p>
