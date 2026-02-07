@@ -1,0 +1,112 @@
+{
+  "site": "https://www.2avi.fr",
+  "generated": "2026-02-07",
+  "version": "v3",
+  "total_assets": 68,
+  "notes": "2 images introuvables retirées (Miramar-cannes2019, Cabourg-2019)",
+  "base_url": "https://www.2avi.fr/wp-content/uploads",
+  "assets": {
+    "common": {
+      "folder": "common",
+      "files": [
+        { "filename": "logo-2avi.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/2avi-cinema.png", "description": "Logo principal 2avi" },
+        { "filename": "header-references.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/image-entete-01.jpg", "description": "Image header page Références" },
+        { "filename": "header-contact.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/image-entete-02.jpg", "description": "Image header pages Contact" },
+        { "filename": "header-news.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/image-entete-03.jpg", "description": "Image header page News" }
+      ]
+    },
+    "00-homepage": {
+      "folder": "00-homepage",
+      "page_url": "https://www.2avi.fr/",
+      "files": [
+        { "filename": "home-cinema-plein-air.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/02/home-1.jpg", "description": "Image cinéma plein air (coucher de soleil, écran extérieur)" },
+        { "filename": "home-festival-event.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/02/home-2.jpg", "description": "Festival/événement avec écran LED et public" },
+        { "filename": "home-salle-projection.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/02/home-3.jpg", "description": "Salle de projection avec écran de test" },
+        { "filename": "news-miramar-cannes.png", "url": "https://www.2avi.fr/wp-content/uploads/2020/06/Miramar-news-e1626960951892.png", "description": "Salle Miramar Cannes - sièges rouges" },
+        { "filename": "news-mi6-chaillot.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/MI6-Chaillot2018-e1626960724891.jpg", "description": "Avant-première Mission Impossible 6 - Palais de Chaillot" }
+      ]
+    },
+    "02-solutions-cinema-evenements": {
+      "folder": "02-solutions-cinema-evenements",
+      "page_url": "https://www.2avi.fr/solutions/cinema/evenements/",
+      "files": [
+        { "filename": "header-evenements.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/image-entete-05-1.jpg", "description": "Header page événements" },
+        { "filename": "evenements-avant-premiere.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/cinema-evenements-avant-premiere.jpg", "description": "Avant-premières cinéma" },
+        { "filename": "evenements-cine-concert.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/cinema-evenements-cine-concert.jpg", "description": "Ciné-concert" }
+      ]
+    },
+    "12-references": {
+      "folder": "12-references",
+      "page_url": "https://www.2avi.fr/references/",
+      "files": [
+        { "filename": "ref-01-cine-concert-2001-philharmonie.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Cine-concert-2001-Space-Odyssey-Philharmonie-Paris.jpg", "description": "Ciné-concert 2001 Space Odyssey - Philharmonie Paris" },
+        { "filename": "ref-02-cinema-assemblee-nationale.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Cinéma-Assemblée-Nationale.jpg", "description": "Cinéma projection - Assemblée Nationale" },
+        { "filename": "ref-03-cinema-bnf-netflix.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Cinema-BNF-Netflix.jpg", "description": "Avant-première Netflix - Salle Richelieu BNF" },
+        { "filename": "ref-04-plein-air-enghien-2014.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Réf-Enghien-2014.jpg", "description": "Cinéma plein air Enghien 2014" },
+        { "filename": "ref-05-grand-rex-cabine.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Réf-Grand-Rex-Cabine.jpg", "description": "Grand Rex Cabine" },
+        { "filename": "ref-06-led-display-cap3000-a.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Led-Display-cap-3000.jpg", "description": "Led Display Cap 3000 - image 1" },
+        { "filename": "ref-07-led-display-cap3000-b.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Réf-Led-Display-cap-3000.jpg", "description": "Led Display Cap 3000 - image 2" },
+        { "filename": "ref-08-led-display-4temps.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Réf-Led-Display-Les-4-Temps.jpg", "description": "Led Display Les 4 Temps" },
+        { "filename": "ref-09-ghostbuster-moulin-rouge.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Cinema-GhostBuster-Lamachine-du-moulin-rouge.jpg", "description": "Avant-première GhostBuster - La Machine du Moulin Rouge" },
+        { "filename": "ref-10-cinema-opera-garnier.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Cinéma-Opéra-Garnier-Paris.jpg", "description": "Cinéma - Opéra Garnier Paris" },
+        { "filename": "ref-11-deauville-festival-americain.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Deauville-Festival-Film-americain.jpg", "description": "Festival du film américain de Deauville" },
+        { "filename": "ref-12-festival-film-femmes-creteil-2017.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Festival-du-film-de-femmes-Creteil-2017.jpg", "description": "Festival du film de femmes Créteil 2017" },
+        { "filename": "ref-13-iron-fist-lantenne.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Iron-Fist-LAntenne.jpg", "description": "Iron Fist - L'Antenne" },
+        { "filename": "ref-14-figures-ombre-ibm.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/Ref-Les-Figures-de-LOmbre-IBM.jpg", "description": "Les Figures de l'Ombre - IBM" },
+        { "filename": "ref-15-matrix.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/03/matrix.jpg", "description": "Matrix" },
+        { "filename": "ref-16-cine-concert-mecano-generale-pureaux.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/04/Ref-Ciné-concert-Le-Mécano-de-la-Général-Pureaux.jpg", "description": "Ciné-concert Le Mécano de la Générale - Puteaux" },
+        { "filename": "ref-17-cine-concert-visitors-philharmonie.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/04/Ref-Ciné-concert-Visitors-Philharmonie-Paris.jpg", "description": "Ciné-concert Visitors - Philharmonie Paris" },
+        { "filename": "ref-18-cine-concert-petite-taupe-lyon.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/04/Ref-Ciné-concert-La-Petite-Taupel-Auditorium-Lyon.jpg", "description": "Ciné-concert La Petite Taupe - Auditorium Lyon" },
+        { "filename": "ref-19-cine-concert-temps-modernes-radio.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/05/Ref-Cine-concert-Les-temps-moderne-maison-de-la-radio-1.jpg", "description": "Ciné-concert Les Temps Modernes - Maison de la Radio" },
+        { "filename": "ref-20-avp-grand-palais-rodin.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/06/Cinéma-Avant-première-Grand-Palais-Rodin.png", "description": "Avant-première Grand Palais - Rodin" },
+        { "filename": "ref-21-loreal-cinema-club-cannes2017.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/05/Ref-Cinéma-LOréal-Cinema-Club-Cannes2017.jpg", "description": "L'Oréal Cinema Club - Cannes 2017" },
+        { "filename": "ref-22-semaine-critique-cannes2017.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/06/Ref-Cinéma-Semaine-de-la-Critique-Cannes2017.jpg", "description": "Semaine de la Critique - Cannes 2017" },
+        { "filename": "ref-23-cine-concert-artiste-lyon.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/06/Ref-Ciné-concert-The-Artiste-Auditorium-Lyon.jpg", "description": "Ciné-concert The Artist - Auditorium Lyon" },
+        { "filename": "ref-24-festival-lama-2017.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/09/Ref-Cinema-Festival-Lama-2017.jpg", "description": "Festival du film de Lama 2017" },
+        { "filename": "ref-25-led-display-ugc19.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/11/Ref-LedDisplay-UGC19.jpg", "description": "Led Display UGC 19" },
+        { "filename": "ref-26-led-display-villup.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/11/Ref-LedDisplay-VillUp.jpg", "description": "Led Display Vill'Up" },
+        { "filename": "ref-27-avp-jumanji-grand-rex.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2017/12/Ref-Cinéma-AVP-Jumanji-Grand-Rex-Paris.jpg", "description": "Avant-première Jumanji - Grand Rex Paris" },
+        { "filename": "ref-28-salle-pleyel-2018.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/02/Ref-Cinéma-Salle-Pleyel-Paris-2018.jpg", "description": "Cinéma Salle Pleyel Paris 2018" },
+        { "filename": "ref-29-titanic-live.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/03/Titanic-live.jpg", "description": "Titanic Live" },
+        { "filename": "ref-30-la-divine.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/03/La-divine.jpg", "description": "La Divine" },
+        { "filename": "ref-31-festival-creteil-2018.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/03/Réf-Festival-creteil-2018.jpg", "description": "Festival Créteil 2018" },
+        { "filename": "ref-32-mi6-chaillot-2018.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/Ref-Cinéma-MI6-Chaillot2018.jpg", "description": "Mission Impossible 6 - Chaillot 2018" },
+        { "filename": "ref-33-la-cartonnerie-2018.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/Ref-Cinéma-La-Cartonnerie-2018.jpg", "description": "La Cartonnerie 2018" },
+        { "filename": "ref-34-mopa-2018-arles.png", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/Ref-Cinema-Evènement-Mopa2018-Arles.png", "description": "MOPA 2018 Arles" },
+        { "filename": "ref-35-grand-action-2018.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/Ref-Cinéma-Grand-Action2018.jpg", "description": "Grand Action 2018" },
+        { "filename": "ref-36-cite-musique-nosferatu.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/06/Cité-de-la-Musique-Nosferatu.jpg", "description": "Cité de la Musique - Nosferatu" },
+        { "filename": "ref-37-semaine-critique-cannes-2019.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/06/semaine-de-la-critique-2019.jpg", "description": "Semaine de la Critique - Cannes 2019" },
+        { "filename": "ref-38-st-cheron-plein-air-2019.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/06/ST-Cheron-plein-air-2019.jpg", "description": "Cinéma plein air St-Chéron 2019" },
+        { "filename": "ref-39-mopa-2019.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/06/mopa2019.jpg", "description": "MOPA 2019" },
+        { "filename": "ref-40-avignon-opera-ecole-images.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/07/Avignon-Opéra-EcoleDesNouvellesImages.jpg", "description": "Avignon Opéra - École des Nouvelles Images" },
+        { "filename": "ref-41-lariboisiere.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/07/Lariboisière.jpg", "description": "Lariboisière" },
+        { "filename": "ref-42-theatre-marigny-champs-elysees-2019.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2019/07/Ref-Théâtre-Marigny-Champs-Elysées-Film-Festival2019.jpg", "description": "Théâtre Marigny - Champs-Élysées Film Festival 2019" },
+        { "filename": "ref-43-plein-air-marcoussis-2020.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2020/06/Ref-cinema-Plein-Air-Marcoussis-Bohemian-Rhapsody-2020.jpg", "description": "Cinéma plein air Marcoussis - Bohemian Rhapsody 2020" },
+        { "filename": "ref-44-plein-air-breuillet-2020.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2020/07/Ref-Cinéma-Plei-Air-Breuillet-2020.jpg", "description": "Cinéma plein air Breuillet 2020" },
+        { "filename": "ref-45-festival-cabourg-2020.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2020/07/Ref-Festival-Cabourp2020.jpg", "description": "Festival Cabourg 2020" },
+        { "filename": "ref-46-opera-bastille-indes-galantes-2020.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2020/10/Opéra-Bastille-les-indes-Galantes-2020.jpg", "description": "Opéra Bastille - Les Indes Galantes 2020" }
+      ]
+    },
+    "13-news": {
+      "folder": "13-news",
+      "page_url": "https://www.2avi.fr/news/",
+      "files": [
+        { "filename": "news-miramar-cannes.png", "url": "https://www.2avi.fr/wp-content/uploads/2020/06/Miramar-news-e1626960951892.png", "description": "Salle Miramar Cannes" },
+        { "filename": "news-mi6-chaillot.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/09/MI6-Chaillot2018-e1626960724891.jpg", "description": "Mission Impossible 6 au Palais de Chaillot" },
+        { "filename": "news-ecole-buissonniere.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/02/Ecole-buissonniere.jpg", "description": "L'Ecole buissonnière au Nouveau Siècle" },
+        { "filename": "news-st-eustache-roi-des-rois.jpg", "url": "https://www.2avi.fr/wp-content/uploads/2018/02/st-eustache-01.jpg", "description": "Le Roi des Rois à l'église Saint Eustache" },
+        { "filename": "news-festival-lama-2017.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/10/Lama2017.png", "description": "Festival du film de Lama 2017" },
+        { "filename": "news-dunkerque.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/10/Dunkerque.png", "description": "Avant-première du film Dunkerque" },
+        { "filename": "news-semaine-critique-remise-prix.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/07/semaine-de-la-critique-remise-prix.png", "description": "Semaine de la Critique - Remise de prix" },
+        { "filename": "news-semaine-critique-affiche.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/07/semaine-de-la-critique-affiche.png", "description": "Semaine de la Critique - Affiche" },
+        { "filename": "news-loreal-cannes-elle-fanning.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/07/loreal-cannes-elle-fanning-02.png", "description": "L'Oréal Cannes - Elle Fanning" },
+        { "filename": "news-loreal-cannes.png", "url": "https://www.2avi.fr/wp-content/uploads/2017/07/loreal-cannes.png", "description": "L'Oréal Paris - CINEMA CLUB à Cannes" }
+      ]
+    },
+    "14-contact-about-us": {
+      "folder": "14-contact-about-us",
+      "page_url": "https://www.2avi.fr/contact/about-us/",
+      "files": []
+    }
+  }
+}
